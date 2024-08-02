@@ -203,7 +203,7 @@ class EncoderDecoder(BaseSegmentor):
 
         return seg_logit
 
-    def forward_train(self, img, img_2, img_metas, gt_shading, gt_semantic_seg, **kwargs): # 1220 #calay 0906
+    def forward_train(self, img, img_2, img_metas, gt_shading, gt_semantic_seg, **kwargs):
         """Forward function for training.
 
         Args:
@@ -239,7 +239,7 @@ class EncoderDecoder(BaseSegmentor):
         x = self.extract_feat(img, **kwargs)
 
         x = list(x)
-        x_2 = self.extract_feat_2(img_2, **kwargs)  # 提取第二路输入的特征
+        x_2 = self.extract_feat_2(img_2, **kwargs)
         x_2 = list(x_2)
         layer_i = -1
         x[layer_i] = torch.cat([x[layer_i], x_2[layer_i]], dim=1)

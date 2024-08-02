@@ -18,6 +18,9 @@ os.environ["CUDA_VISIBLE_DEVICES"]='0'
 def train(params, train_loader, valid_loader, model):
     # Optimization
     optimizer = Adam(model.parameters(), params['learning_rate'], weight_decay=1e-8)
+    if not params['material_mask']:
+        scheduler = lr_scheduler.ReduceLROnPlateau(optimizer,
+        patience=params['epochs']*3, factor=0.5, verbose=True)
     # Loss function
     criterion = nn.MSELoss()
     # Training
@@ -80,6 +83,8 @@ def train(params, train_loader, valid_loader, model):
             optimizer.zero_grad()
             loss.backward()
             optimizer.step()
+            if not params['material_mask']:
+                scheduler.step(loss)
 
             if iteration % params['summary_interval'] == 0:
                 train_loss_meter.update(loss.item())
@@ -149,7 +154,7 @@ def parse_args():
     parser.add_argument('--ckpt_interval', default=600, type=int, help='Interval for saving checkpoints, unit is iteration')
     parser.add_argument('--ckpt_dir', default='./ckpts', type=str, help='Checkpoint directory')
     parser.add_argument('--stats_dir', default='./stats', type=str, help='Statistics directory')
-    parser.add_argument('--epochs', default=1, type=int)
+    parser.add_argument('--epochs', default=4000, type=int)
     parser.add_argument('-lr', '--learning_rate', default=1e-4, type=float)
     parser.add_argument('--summary_interval', default=10, type=int)
 
