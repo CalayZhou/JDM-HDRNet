@@ -5,7 +5,9 @@
    <a href='https://arxiv.org/pdf/2407.17996v1'>
       <img src='https://img.shields.io/badge/Paper-PDF-red?style=flat&logo=arXiv&logoColor=red' alt='arXiv PDF'>
    </a>
+   <a href='https://www.youtube.com/watch?v=hh0GhS-2oyM&t=19s'>
    <img alt="Static Badge" src="https://img.shields.io/badge/https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Dhh0GhS-2oyM%26t%3D19s?label=youtube">
+   </a>
   <img src="https://img.shields.io/github/last-commit/CalayZhou/JDM-HDRNet">
   <img src="https://img.shields.io/github/release-date/CalayZhou/JDM-HDRNet">
 </p>
