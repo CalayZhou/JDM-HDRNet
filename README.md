@@ -58,7 +58,7 @@ matplotlib   3.6.1
 pip intall einops                 
 ```
 ### 2.Dataset
-Download the `Mobile-Spec` dataset from [NJU-Box](https://box.nju.edu.cn/d/521896e2fdf84ae7996a/), [Google Drive](https://drive.google.com/file/d/14nhLzAOM4WM3Ny4NhWwho3lMGMfzQ70t/view?usp=drive_link)  or [Baidu Cloud (code: tcpg)](https://pan.baidu.com/s/1yTDHwim2oPJe3Zu_uxcZ_A?pwd=tcpg)  as
+Download the `Mobile-Spec` dataset from [Google Drive](https://drive.google.com/file/d/14nhLzAOM4WM3Ny4NhWwho3lMGMfzQ70t/view?usp=drive_link)  or [Baidu Cloud (code: tcpg)](https://pan.baidu.com/s/1yTDHwim2oPJe3Zu_uxcZ_A?pwd=tcpg)  as
  
 
 ```bash
@@ -107,7 +107,7 @@ change the `--train_data_dir` and `--eval_data_dir` to your own path.
 ```
 
 ### 5.Joint RGB-Spectral Decomposition Model
-Please download `Mobile-Spec_jdm` dataset from [NJU-BOX](https://box.nju.edu.cn/d/ec0fbac5de90426685fc/) or [Baidu Cloud (code:q9tk)](https://pan.baidu.com/s/13wez1JsR8i52sOaU3sm_cQ?pwd=q9tk), and download the trained model `jdm_iter_14000.pth` ([NJU-BOX](https://box.nju.edu.cn/f/342f71c245d84c999950/?dl=1) or [Baidu Cloud (code:5iz8)](https://pan.baidu.com/s/166nOmwh7QmIwI5uOFU5DAA?pwd=5iz8)) to `./work_dirs/`.
+Please download `Mobile-Spec_jdm` dataset from [NJU-BOX](https://box.nju.edu.cn/d/ec0fbac5de90426685fc/) or [Baidu Cloud (code:q9tk)](https://pan.baidu.com/s/13wez1JsR8i52sOaU3sm_cQ?pwd=q9tk), and download the trained model `jdm_iter_14000.pth` ([Google Drive](https://drive.google.com/file/d/1FaBydZVeH-zO2-s7BzoEfE0YOA_aj7mh/view?usp=sharing) or [Baidu Cloud (code:5iz8)](https://pan.baidu.com/s/166nOmwh7QmIwI5uOFU5DAA?pwd=5iz8)) to `./work_dirs/`.
 ```bash
 ## 1.install mmsegmentation-0.22 (please notice version correspondence of mmcv, cuda and torch)
 cd segmentation-jdm/
