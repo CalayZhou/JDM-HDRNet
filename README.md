@@ -107,7 +107,7 @@ change the `--train_data_dir` and `--eval_data_dir` to your own path.
 ```
 
 ### 5.Joint RGB-Spectral Decomposition Model
-Please download `Mobile-Spec_jdm` dataset from [One Drive](https://smailnjueducn-my.sharepoint.com/:u:/g/personal/calayzhou_smail_nju_edu_cn/EbFBxkZiNSpGpgZ70i6B0OwBsiG3Q9g5c2ROI7nPqMFStA?e=wragAA) or [Baidu Cloud (code:q9tk)](https://pan.baidu.com/s/13wez1JsR8i52sOaU3sm_cQ?pwd=q9tk), and download the trained model `jdm_iter_14000.pth` ([Google Drive](https://drive.google.com/file/d/1FaBydZVeH-zO2-s7BzoEfE0YOA_aj7mh/view?usp=sharing) or [Baidu Cloud (code:5iz8)](https://pan.baidu.com/s/166nOmwh7QmIwI5uOFU5DAA?pwd=5iz8)) to `./work_dirs/`.
+Please download `Mobile-Spec_jdm` dataset from [Google Drive](https://drive.google.com/file/d/1mkHZ7yMqmYQ65r5SSu6VsKpk4I00QBv-/view?usp=sharing) or [Baidu Cloud (code:q9tk)](https://pan.baidu.com/s/13wez1JsR8i52sOaU3sm_cQ?pwd=q9tk), and download the trained model `jdm_iter_14000.pth` ([Google Drive](https://drive.google.com/file/d/1FaBydZVeH-zO2-s7BzoEfE0YOA_aj7mh/view?usp=sharing) or [Baidu Cloud (code:5iz8)](https://pan.baidu.com/s/166nOmwh7QmIwI5uOFU5DAA?pwd=5iz8)) to `./work_dirs/`.
 ```bash
 ## 1.install mmsegmentation-0.22 (please notice version correspondence of mmcv, cuda and torch)
 cd segmentation-jdm/
