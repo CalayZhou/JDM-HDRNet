@@ -80,7 +80,7 @@ Download the `Mobile-Spec` dataset from [Google Drive](https://drive.google.com/
 |---|---spec_npy10band
 |---|---target
 ```
-The original hyperspectral images (`.mat` format, about 54GB) can be downloaded from  [Baidu Cloud (code:7hc2)](https://pan.baidu.com/s/1XLjxEgx0EPCUd7-7dLbdrQ?pwd=7hc2).
+The original hyperspectral images (`.mat` format, about 54GB) can be downloaded from  [Baidu Cloud (code:7hc2)](https://pan.baidu.com/s/1XLjxEgx0EPCUd7-7dLbdrQ?pwd=7hc2) or [One Drive](https://entuedu-my.sharepoint.com/:f:/g/personal/kailai_zhou_staff_main_ntu_edu_sg/IgDaS8sx1sfhT58FdvI8mubwAWUSmOphOCsw4mcVFhbVdLU?e=vcqTnl).
 
 ### 3.Train
 ```bash
